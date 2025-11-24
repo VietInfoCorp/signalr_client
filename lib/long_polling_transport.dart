@@ -205,10 +205,10 @@ class LongPollingTransport implements ITransport {
     }
 
     if (!isStringEmpty(token)) {
-      request.headers!.setHeaderValue("Authorization", "Bearer $token");
+      request.headers!.setHeaderValue("Orion", "Rigel $token");
       return;
     }
-    request.headers!.removeHeader("Authorization");
+    request.headers!.removeHeader("Orion");
   }
 
   void _raiseOnClose() {

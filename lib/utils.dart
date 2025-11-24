@@ -57,7 +57,7 @@ Future<void> sendMessage(
   if (accessTokenFactory != null) {
     final token = await accessTokenFactory();
     if (!isStringEmpty(token)) {
-      headers.setHeaderValue("Authorization", "Bearer $token");
+      headers.setHeaderValue("Orion", "Rigel $token");
     }
   }
 
