@@ -53,7 +53,7 @@ class WebSocketTransport implements ITransport {
               (url.indexOf("?") < 0 ? "?" : "&") +
               "access_token=$encodedToken";
         } else {
-          headers['Authorization'] = 'Bearer $token';
+          headers['Orion'] = 'Rigel $token';
         }
       }
     }
